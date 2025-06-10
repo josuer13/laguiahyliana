@@ -1,0 +1,374 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    height: 151px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-attachment: fixed;
+}
+
+.linkbotw {
+    position: absolute;
+    left: 34px;
+    top: 0px;
+}
+
+.linktotk {
+    position: absolute;
+    right: 34px;
+    top: 0px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 47px;
+}
+
+.tilde {
+    position: absolute;
+    left: 850px;
+    top: 12px;
+}
+
+.TipTitle {
+    color: #42736E;
+    font-weight: 800px;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+.TipText {
+    color: #292929;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: -40px;
+    left: 20px;
+}
+
+.TipGame{
+    color: #B99658;
+    font-size: 0.875rem;
+    line-height: 1.7142857143;
+    font-weight: 300;
+    margin-left: 20px;
+    font-style: italic;
+}
+
+#Tip{
+    background-color: #F4EFE5;
+    width: 391px;
+    height: 494px;
+    border-radius: 20px;
+    
+}
+
+.miniheader{
+    display: flex;
+}
+
+.Escalada{
+    position: absolute;
+    left: 76px;
+    top: 416px;
+}
+
+.Espada{
+    position: absolute;
+    right: 76px;
+    top: 416px;
+}
+.Bienvenida{
+    background-color: #F4EFE5;
+    width: 391px;
+    height: 494px;
+    position: absolute;
+    top: 320px;
+    left: 760px;
+    border-radius: 20px;;
+}
+
+#TipB{
+    background-color: #F4EFE5;
+    width: 391px;
+    height: 494px;
+    border-radius: 20px;
+}
+
+.BienvenidaImage, .EscaladaImage, .EspadaImage{
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.BotwFoto {
+    position: absolute;
+    right: 118px;
+    top: 1226px; 
+    width: 371px;
+    height: 371px;
+    border-radius: 50%;
+}
+
+.Breath{
+    position: absolute;
+    left: 230px;
+    top: 1254px; 
+}
+
+.TotkFoto {
+    position: absolute;
+    left: 118px;
+    top: 1741px; 
+    width: 371px;
+    height: 371px;
+    border-radius: 50%;
+}
+
+.Tears{
+    position: absolute;
+    left: 630px;
+    top: 1754px; 
+}
+
+#button{
+    width: 655px;
+    height: 118px;
+    background-color: #10200E;
+    border: 8px solid #B99658;
+    border-radius: 36px;
+    color: #F4EFE5;
+    font-size: 56px;
+}
+
+.ButtonBreath{
+    position: absolute;
+    left: 375px;
+    top: 1512px;
+}
+
+.EnlaceBreath{
+    text-decoration: none;
+    color: #F4EFE5;
+}
+
+.ButtonTears{
+    position: absolute;
+    right: 475px;
+    top: 2000px;
+}
+
+.EnlaceButton{
+    text-decoration: none;
+    color: #F4EFE5;
+}
+
+.TipsDiv{
+    margin-top: 780px;
+}
+
+.CenterFoto{
+    position: absolute;
+    top: 2554px;
+    left: 720px;
+    border-radius: 50%;
+}
+
+.CenterText{
+    left: 510px;
+    position: absolute;
+    top: 2954px;
+}
+
+.CenterButton{
+    position: absolute;
+    left: 590px;
+    top: 3100px;
+}
+
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 151px;
+    position: absolute;
+    left: 0px;
+    top: 3600px;
+}
+
+.footertips{
+    background-color: #000;
+    width: 100%;
+    height: 151px;
+    position: absolute;
+    left: 0px;
+    top: 3600px;
+}
+
+.linkbotw2 {
+    position: absolute;
+    left: 34px;
+    bottom: 0px;
+}
+
+.linktotk2 {
+    position: absolute;
+    right: 34px;
+    bottom: 0px;
+}
+
+.logo2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 12px;
+}
+
+.tilde2 {
+    position: absolute;
+    left: 850px;
+    bottom: 105px;
+}
+
+.Tutorial{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.TextoPage{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.FotoPage{
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    width: 371px;
+    height: auto;
+}
+
+.Tears2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1754px; 
+}
+
+.footer{
+    position: absolute;
+    left: 0px;
+    top: 1600px;
+}
+
+                                                                          /* 
+                                                                    Menu Page CSS
+                                                                          */
+.titlemenu{
+    position: absolute;
+    top: 950px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F4EFE5;
+    border: 3.5px solid #B99658;
+    padding: 20px;
+    background-color: rgba(14, 30, 12, 0.9);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu-wrapper {
+    position: relative;
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.fila {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 240px;
+    width: 100%; 
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    flex: 1; 
+    max-width: 150px; 
+    background-color: rgba(16, 32, 14, 0.8);
+    padding: 8px 15px;
+    text-align: center;
+    color: #F4EFE5;
+    font-weight: 550;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #B99658;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #F4EFE5;
+}
+
+.menu-item:hover {
+    background-color: rgba(16, 32, 14, 0.9);
+    transform: scale(1.1);
+    border-color: #00ffff;
+    color: #f0e3cb;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 3px solid #B99658;
+}
+
+                                                                            /* 
+                                                                    Historia Page CSS
+                                                                            */
+.Spoiler {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.historia-container{
+    position: absolute;
+    top: 1100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F4EFE5;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+.historia{
+    font-size: 36px;
+    font-weight: medium;
+}
+
+.titlehistoria{
+    font-size: 44px;
+    font-weight: bold;
+}
