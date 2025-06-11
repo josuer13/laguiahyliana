@@ -1,6 +1,6 @@
 # La Guía Hyliana
 Una página web de Tutoriales para los juegos: The Legend of Zelda: Breath of the Wild y Tears of the Kingdom
-La página tiene cuatro partes:
+*La página tiene cuatro partes:*
 ## - La principal,
  Donde estás apenas al entrar a la página.
   ## - Breath of the Wild,
