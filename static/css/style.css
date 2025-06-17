@@ -24,10 +24,17 @@ header {
     top: 0px;
 }
 
+.logohyrule{
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%);
+    top: 12px;
+}
+
 .logo{
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-40%);
     top: 47px;
 }
 
