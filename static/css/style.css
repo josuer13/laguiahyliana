@@ -29,6 +29,8 @@ header {
     left: 50%;
     transform: translate(-60%);
     top: 12px;
+    width: 200px;
+    height: 200px;
 }
 
 .logo{
