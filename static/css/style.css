@@ -24,10 +24,19 @@ header {
     top: 0px;
 }
 
+.logohyrule{
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%);
+    top: 12px;
+    width: 200px;
+    height: 200px;
+}
+
 .logo{
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-40%);
     top: 47px;
 }
 
@@ -54,6 +63,7 @@ header {
     position: relative;
     top: -40px;
     left: 20px;
+    margin: 20px;
 }
 
 .TipGame{
