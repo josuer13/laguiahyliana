@@ -380,3 +380,8 @@ footer{
     font-size: 36px;
     font-weight: bold;
 }
+
+.historia-container{
+    width: 55%;
+    height: auto;
+}
