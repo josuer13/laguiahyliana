@@ -2,274 +2,515 @@
     font-family: 'Kanit', sans-serif;
 }
 
-header {
-    background-color: #000;
-    width: 100%;
-    height: 151px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    background-attachment: fixed;
+/* --- Header y Footer --- */
+
+        /* --- Header --- */
+
+        header {
+            background-color: #000;
+            width: 100%;
+            height: 151px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-attachment: fixed;
+        }
+
+        .linkbotw {
+            position: absolute;
+            left: 34px;
+            top: 0px;
+        }
+
+        .linktotk {
+            position: absolute;
+            right: 34px;
+            top: 0px;
+        }
+
+        .logohyrule{
+            position: absolute;
+            left: 50%;
+            transform: translate(-60%);
+            top: 12px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .logo{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 47px;
+        }
+
+            /* --- Logo Animation --- */
+
+            .logo {
+                left: 50%;
+                transform: translate(-50%);
+                animation: logoAppearingRotate 1s 
+            }
+
+            @keyframes logoAppearingRotate {
+                0% {
+                    transform: translate(-50%) scale(0.7) rotate(-10deg);
+                    opacity: 0.2;
+                }
+                60% {
+                    transform: translate(-50%) scale(1.15) rotate(10deg);
+                    opacity: 1;
+                }
+                80% {
+                    transform: translate(-50%) scale(0.95) rotate(-5deg);
+                }
+                100% {
+                    transform: translate(-50%) scale(1) rotate(0deg);
+                }
+            }
+
+
+        .tilde {
+            position: absolute;
+            left: 45%;
+            transform: translate(-45%);
+            top: 12px;
+        }
+
+            /* --- Tilde Animation --- */
+
+            .tilde {
+                left: 45%;
+                transform: translate(-45%);
+                animation: tildeAppearing 1s 
+            }
+
+            @keyframes tildeAppearing{
+                0% {
+                    transform: scale(0.7);
+                    opacity: 0.2;
+                }
+                60% {
+                    transform: scale(1.15);
+                    opacity: 0.5;
+                }
+                80% {
+                    transform: scale(0.95);
+                    opacity: 0.7;
+                }
+                100% {
+                    transform: scale(1) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+
+        /* --- Footer --- */
+
+
+        footer{
+            background-color: #000;
+            width: 100%;
+            height: 151px;
+            position: absolute;
+            left: 0px;
+            top: 3600px;
+            
+        }
+
+        .footertips{
+            background-color: #000;
+            width: 100%;
+            height: 151px;
+            position: relative;
+        }
+        
+        .linkbotw2 {
+        position: absolute;
+        left: 34px;
+        bottom: 0px;
+        }
+
+        .linktotk2 {
+            position: absolute;
+            right: 34px;
+            bottom: 0px;
+        }
+
+        .logo2 {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            bottom: 12px;
+        }
+
+        .tilde2 {
+            position: absolute;
+            left: 45%;
+            transform: translate(-45%);
+            bottom: 105px;
+        }
+
+
+/* --- MiniHeader --- */
+
+.miniheader {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 200px;
+  flex-wrap: wrap;
 }
 
-.linkbotw {
-    position: absolute;
-    left: 34px;
-    top: 0px;
-}
+        /* --- Tips Diseño --- */
 
-.linktotk {
-    position: absolute;
-    right: 34px;
-    top: 0px;
-}
+        .TipTitle {
+            color: #42736E;
+            font-weight: 800px;
+            font-size: 24px;
+            font-family: 'Kanit', sans-serif;
+            font-style: italic;
+            position: relative;
+            top: -25px;
+            left: 20px;
+        }
+        .TipText {
+            color: #292929;
+            font-size: 20px;
+            font-family: 'Kanit', sans-serif;
+            position: relative;
+            top: -40px;
+            left: 20px;
+            margin-right: 40px;
+        }
 
-.logohyrule{
-    position: absolute;
-    left: 50%;
-    transform: translate(-60%);
-    top: 12px;
-    width: 200px;
-    height: 200px;
-}
+        .TipGame{
+            color: #B99658;
+            font-size: 0.875rem;
+            line-height: 1.7142857143;
+            font-weight: 300;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-style: italic;
+        }
 
-.logo{
-    position: absolute;
-    left: 50%;
-    transform: translate(-40%);
-    top: 47px;
-}
+        #Tip{
+            background-color: #F4EFE5;
+            width: 390px;
+            height: 500px;
+            border-radius: 20px;
+            
+        }
 
-.tilde {
-    position: absolute;
-    left: 850px;
-    top: 12px;
-}
+                /* --- Tips Animación --- */
 
-.TipTitle {
-    color: #42736E;
-    font-weight: 800px;
-    font-size: 24px;
-    font-family: 'Kanit', sans-serif;
-    font-style: italic;
-    position: relative;
-    top: -25px;
-    left: 20px;
-}
-.TipText {
-    color: #292929;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    position: relative;
-    top: -40px;
-    left: 20px;
-    margin-right: 20px;
-}
+                #Tip {
+                    background-color: #F4EFE5;
+                    width: 391px;
+                    height: 494px;
+                    border-radius: 20px;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
 
-.TipGame{
-    color: #B99658;
-    font-size: 0.875rem;
-    line-height: 1.7142857143;
-    font-weight: 300;
-    margin-left: 20px;
-    font-style: italic;
-}
+                #Tip:hover {
+                    animation: tipHover 0.3s 0.2s forwards ease-in;
+                }
 
-#Tip{
-    background-color: #F4EFE5;
-    width: 391px;
-    height: 494px;
-    border-radius: 20px;
-    
-}
+                @keyframes tipHover {
+                    0% {
+                        transform: translateY(0) scale(1);
+                    }
+                    100% {
+                        transform: scale(1.04) rotate(-2deg);
+                        box-shadow: 0 8px 32px rgba(225, 211, 149, 0.4);
+                    }
+                }
 
-.miniheader{
-    display: flex;
-}
+                /* --- 3 Tips Style --- */       
 
-.Escalada{
-    position: absolute;
-    left: 76px;
-    top: 416px;
-}
+                .Escalada, .Espada{
+                    margin-top: 100px;
+                }
 
-.Espada{
-    position: absolute;
-    right: 76px;
-    top: 416px;
-}
-.Bienvenida{
-    background-color: #F4EFE5;
-    width: 391px;
-    height: 494px;
-    position: absolute;
-    top: 320px;
-    left: 760px;
-    border-radius: 20px;;
-}
+                .Bienvenida{
+                    background-color: #F4EFE5;
+                    width: 391px;
+                    height: 494px;
+                    top: 320px;
+                    left: 760px;
+                    border-radius: 20px;
+                    margin-top: 70px;
+                }
 
-#TipB{
-    background-color: #F4EFE5;
-    width: 391px;
-    height: 494px;
-    border-radius: 20px;
-}
+                .BienvenidaImage, .EscaladaImage, .EspadaImage{
+                    position: relative;
+                    left: 20px;
+                    top: 20px;
+                }
 
-.BienvenidaImage, .EscaladaImage, .EspadaImage{
-    position: relative;
-    left: 20px;
-    top: 20px;
-}
+/* --- Tutoriales --- */
+            
 
-.BotwFoto {
-    position: absolute;
-    right: 118px;
-    top: 1226px; 
-    width: 371px;
-    height: 371px;
-    border-radius: 50%;
-}
+        /* --- Estilos Predeterminados --- */
 
-.Breath{
-    position: absolute;
-    left: 230px;
-    top: 1254px; 
-}
+        #button{
+            width: 655px;
+            height: 118px;
+            background-color: #1e271cfd;
+            border: 8px solid #B99658;
+            border-radius: 36px;
+            color: #F4EFE5;
+            font-size: 56px;
+        }
 
-.TotkFoto {
-    position: absolute;
-    left: 118px;
-    top: 1741px; 
-    width: 371px;
-    height: 371px;
-    border-radius: 50%;
-}
+        #EnlaceButton{
+            text-decoration: none;
+            color: #F4EFE5;
+        }
 
-.Tears{
-    position: absolute;
-    left: 630px;
-    top: 1754px; 
-}
 
-#button{
-    width: 655px;
-    height: 118px;
-    background-color: #10200E;
-    border: 8px solid #B99658;
-    border-radius: 36px;
-    color: #F4EFE5;
-    font-size: 56px;
-}
+        /* --- Breath of the Wild --- */
 
-.ButtonBreath{
-    position: absolute;
-    left: 375px;
-    top: 1512px;
-}
+        .BotwFoto {
+            position: absolute;
+            right: 118px;
+            top: 1226px;    
+            width: 371px;
+            height: 371px;
+            border-radius: 50%;
+        }
+        
+                /* --- Efecto de giro para BotwFoto --- */
 
-.EnlaceBreath{
-    text-decoration: none;
-    color: #F4EFE5;
-}
+                .BotwFoto {
+                    animation: botwFotoRotate 1.6s 1 1s;
+                }
+                
+                @keyframes botwFotoRotate {
+                    0% { transform: rotate(0deg); }
+                    30% { transform: rotate(10deg); }
+                    60% { transform: rotate(0deg); }
+                    100% { transform: rotate(0deg); }
+                }
 
-.ButtonTears{
-    position: absolute;
-    right: 475px;
-    top: 2000px;
-}
+                /* --- Efecto hover para BotwFoto --- */
 
-.EnlaceButton{
-    text-decoration: none;
-    color: #F4EFE5;
-}
+                .BotwFoto:hover {
+                    box-shadow: 5px 10px 20px rgba(54, 70, 57, 0.8);
+                    animation-play-state: paused;
+                    transform: scale(1.5);
+                    transform: rotate(-5deg);
+                    transition: all 0.3s ease-in-out;
+                }
 
-.TipsDiv{
-    margin-top: 780px;
-}
+        .Breath{
+            position: absolute;
+            left: 230px;
+            top: 1254px; 
+        }
 
-.CenterFoto{
-    position: absolute;
-    top: 2554px;
-    left: 720px;
-    border-radius: 50%;
-}
+                /* --- Efecto de aparición para Breath --- */
+                .Breath {
+                    opacity: 1;
+                    animation: breathPulse 3s 0.2s
+                }
+                @keyframes breathPulse {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(40px) scale(0.95);
+                    }
+                    75% {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                    
+                    90%{
+                        opacity: 1;
+                        transform: scale(1.05);
+                    }
 
-.CenterText{
-    left: 510px;
-    position: absolute;
-    top: 2954px;
-}
+                    100%{
+                        opacity: 1;
+                        transform: scale(1)
+                    }
+                }
 
-.CenterButton{
-    position: absolute;
-    left: 590px;
-    top: 3100px;
-}
+        .ButtonBreath{
+            position: absolute;
+            left: 375px;
+            top: 1512px;
+        }
+        
+                /* --- Efecto de pulso para el botón --- */
 
-footer{
-    background-color: #000;
-    width: 100%;
-    height: 151px;
-    position: absolute;
-    left: 0px;
-    top: 3600px;
-}
+                .ButtonBreath {
+                    animation: buttonBPulse 2s 2 normal linear 0.3s;
+                }
 
-.footertips{
-    background-color: #000;
-    width: 100%;
-    height: 151px;
-    position: relative;
-}
+                @keyframes buttonBPulse {
+                    0% { transform: scale(1);}
+                    5% { transform: scale(1.06);}
+                    30% { transform: scale(1);}
+                    100% { transform: scale(1);}
+                }
 
-.linkbotw2 {
-    position: absolute;
-    left: 34px;
-    bottom: 0px;
-}
+                /* --- Efecto de sombra para el botón --- */
 
-.linktotk2 {
-    position: absolute;
-    right: 34px;
-    bottom: 0px;
-}
+                .ButtonBreath:hover {
+                    color: #F4EFE5;
+                    box-shadow: 5px 10px 20px rgba(54, 70, 57, 0.8);
+                    animation-play-state: paused;
+                    transition: all 0.3s ease-in-out;
+                }
 
-.logo2 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 12px;
-}
+                /* --- Efecto al presionar el botón --- */
 
-.tilde2 {
-    position: absolute;
-    left: 850px;
-    bottom: 105px;
-}
+                .ButtonBreath:active{
+                    transform: translateY(2px);
+                    box-shadow: 0px 4px 8px rgba(54, 70, 57, 0.8);
+                    background-color: whitesmoke;
+                    border: 8px solid whitesmoke;
+                    transition: all 0.1s ease-in-out;
+                }
 
-.Tutorial{
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translate(-50%);
-}
 
-.TextoPage{
-    position: absolute;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%);
-}
+        /* --- Tears of the Kingdom --- */
 
-.FotoPage{
-    position: absolute;
-    top: 400px;
-    left: 50%;
-    transform: translate(-50%);
-    border-radius: 50%;
-    width: 371px;
-    height: auto;
-}
+        .TotkFoto {
+            position: absolute;
+            left: 118px;
+            top: 1741px; 
+            width: 371px;
+            height: 371px;
+            border-radius: 50%;
+            animation: totkFotoRotate 1.6s 1 1s;
+        }
+
+                /* --- Efecto de giro para TotkFoto --- */
+
+                @keyframes totkFotoRotate {
+                    0% { transform: rotate(0deg); }
+                    30% { transform: rotate(10deg); }
+                    60% { transform: rotate(0deg); }
+                    100% { transform: rotate(0deg); }
+                }
+
+                /* --- Efecto hover para TotkFoto --- */
+
+                .TotkFoto:hover {
+                    box-shadow: 0px 16px 24px rgba(54, 70, 57, 0.8);
+                    animation-play-state: paused;
+                    transform: scale(1.5);
+                    transform: rotate(-5deg);
+                    transition: all 0.3s ease-in-out;
+                }
+
+        .Tears {
+            position: absolute;
+            left: 630px;
+            top: 1754px; 
+            opacity: 1;
+            animation: tearsPulse 3s 0.2s;
+        }
+
+                /* --- Efecto de aparición para Tears --- */
+
+                @keyframes tearsPulse {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(40px) scale(0.95);
+                    }
+                    75% {
+                        opacity: 1;
+                        transform: translateY(0) scale(1);
+                    }
+                    90%{
+                        opacity: 1;
+                        transform: scale(1.05);
+                    }
+                    100%{
+                        opacity: 1;
+                        transform: scale(1)
+                    }
+                }
+
+
+
+        .ButtonTears {
+            position: absolute;
+            right: 275px;
+            top: 2000px;
+        }
+
+                /* --- Efecto de pulso para el botón --- */
+
+                .ButtonTears{
+                    animation: buttonTPulse 2s 2 normal linear 0.3s;
+                }
+
+                @keyframes buttonTPulse {
+                    0% { transform: scale(1);}
+                    5% { transform: scale(1.06);}
+                    30% { transform: scale(1);}
+                    100% { transform: scale(1);}
+                }
+
+                /* --- Efecto de sombra para el botón --- */
+
+                .ButtonTears:hover {
+                    color: #F4EFE5;
+                    box-shadow: 0 8px 20px rgba(54, 70, 57, 0.8);
+                    animation-play-state: paused;
+                    transition: all 0.3s ease-in-out;
+                }
+
+        /* --- Página Tips --- */
+
+        .TipsDiv{
+            margin-top: 780px;
+        }
+
+        .CenterFoto{
+            position: absolute;
+            top: 2554px;
+            left: 720px;
+            border-radius: 50%;
+        }
+
+        .CenterText{
+            left: 510px;
+            position: absolute;
+            top: 2954px;
+        }
+
+        .CenterButton{
+            position: absolute;
+            left: 590px;
+            top: 3100px;
+        }
+
+        .Tutorial{
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .TextoPage{
+            position: absolute;
+            top: 300px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .FotoPage{
+            position: absolute;
+            top: 400px;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            width: 371px;
+            height: auto;
+        }
 
 .Tears2{
     position: absolute;
@@ -356,13 +597,14 @@ footer{
     width: 35%;
     height: auto;
     position: absolute;
-    top: 450px;
+    margin-top: 500px;
+    margin-bottom: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 .historia-container{
     position: absolute;
-    top: 1100px;
+    margin-top: 160vh;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #F4EFE5;
