@@ -1,165 +1,57 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/laguiahyliana/static/css/style.css">
+    <link rel="icon" type="image/png" href="/laguiahyliana/static/images/HyruleLogo.png">
+    <title>La Guía Hyliana - TotK</title>
+</head>
+<body>
+    <header>
+        <img class="linkbotw" src="/laguiahyliana/static/images/Botw.png" alt="Link - Breath of The Wild">
+            <img class="logo" src="/laguiahyliana/static/images/Logo.png" alt="Logo - Guía Hyliana">
+            <img class="tilde" src="/laguiahyliana/static/images/Tilde.png" alt="Tilde - Guía Hyliana">
+        <img class="linktotk" src="/laguiahyliana/static/images/Totk.png" alt="Link - Tears of The Kingdom">
+    </header>
 
-body {
-  font-family: 'Kanit', sans-serif;
-  background-color: #fff;
-  color: #292929;
-  line-height: 1.5;
-}
+    <main>
+        <img class="Tutorial" src="/laguiahyliana/static/images/Tutorial.png" alt="Tutorial - Texto">
+        <img class="TextoPage" src="/laguiahyliana/static/images/Tears of The Kingdom.png" alt="Breath  of The Wild - Texto">
+        <img class="FotoPage" src="/laguiahyliana/static/images/Link Image TOTK.png" alt="Tutorial - Texto">
+            
+            
 
-header,
-footer {
-  background-color: #000;
-  width: 100%;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+                <p class="titlemenu">Menú de Seleccion de Tutoriales</p>
 
-.logo,
-.logo2 {
-  max-width: 180px;
-  height: auto;
-}
+                <div class="menu-wrapper">
 
-.linkbotw,
-.linktotk,
-.linkbotw2,
-.linktotk2 {
-  width: 80px;
-  height: auto;
-}
+                    <div class="fila">
+                        <a href="botw/historia.html" class="menu-item">Historia</a>
+                        <a href="botw/santuario.html" class="menu-item">Santuario</a>
+                        <a href="botw/torres.html" class="menu-item">Torres</a>
+                    </div>
 
-.tilde,
-.tilde2 {
-  width: 60px;
-  height: auto;
-}
+                    <div class="fila">
+                        <a href="botw/espadas.html" class="menu-item">Espadas</a>
+                        <a href="botw/escudos.html" class="menu-item">Escudos</a>
+                        <a href="botw/armas.html" class="menu-item">Armas</a>
+                    </div>
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+                    <div class="fila">
+                        <a href="botw/ropas.html" class="menu-item">Ropas</a>
+                        <a href="botw/cocina.html" class="menu-item">Cocina</a>
+                        <a href="botw/secretos.html" class="menu-item">Secretos</a>
+                    </div>
 
-.miniheader {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 200px;
-}
+                </div>
 
-#Tip,
-#TipB {
-  background-color: #F4EFE5;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 391px;
-  padding: 1rem;
-}
+            
+    </main>
 
-.TipGame {
-  color: #B99658;
-  font-size: 0.875rem;
-  font-style: italic;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
-
-.TipTitle {
-  color: #42736E;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-
-.TipText {
-  font-size: 1.1rem;
-}
-
-.BienvenidaImage,
-.EscaladaImage,
-.EspadaImage {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-.BotwDiv,
-.TotkDiv,
-.CenterDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 4rem;
-}
-
-.BotwFoto,
-.TotkFoto,
-.CenterFoto {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-
-.Breath,
-.Tears,
-.CenterText {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-}
-
-#button {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  background-color: #10200E;
-  border: 8px solid #B99658;
-  border-radius: 36px;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  color: #F4EFE5;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.CenterButton {
-  margin-top: 1rem;
-}
-
-footer {
-  margin-top: 4rem;
-  padding: 2rem;
-  justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-  .miniheader {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .BotwDiv,
-  .TotkDiv,
-  .CenterDiv {
-    margin-top: 2rem;
-  }
-
-  #button {
-    font-size: 1.5rem;
-  }
-}
+    <footer class="footer">
+        <img class="linkbotw2" src="/laguiahyliana/static/images/Botw.png" alt="Link - Breath of The Wild">
+            <img class="logo2" src="/laguiahyliana/static/images/Logo.png" alt="Logo - Guía Hyliana">
+            <img class="tilde2" src="/laguiahyliana/static/images/Tilde.png" alt="Tilde - Guía Hyliana">
+        <img class="linktotk2" src="/laguiahyliana/static/images/Totk.png" alt="Link - Tears of The Kingdom">
+    </footer>
