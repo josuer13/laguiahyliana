@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/laguiahyliana/static/css/style.css">
+    <link rel="stylesheet" href="/laguiahyliana/static/css/responsive.css">
     <link rel="icon" type="image/png" href="/laguiahyliana/static/images/HyruleLogo.png">
     <title>La Guía Hyliana</title>
 </head>
@@ -17,6 +18,9 @@
   gtag('config', 'G-W4S9XW8MZG');
 </script>
 <body>
+
+    <!--- Header -->
+
     <header>
         <img class="linkbotw" src="/laguiahyliana/static/images/Botw.png" alt="Imagen - Link - Breath of The Wild">
             <img class="logo" src="/laguiahyliana/static/images/Logo.png" alt="Texto - Logo - Guía Hyliana">
@@ -25,7 +29,12 @@
     </header>
 
     <main>
+
+            <!--- Sección del MiniHeader, 3 cartas -->   
+
         <span class="miniheader">
+
+            <!--- Carta 1 -->  
 
             <div class="Escalada" id="Tip">
                 <img class="EscaladaImage" src="/laguiahyliana/static/images/EscaladaImage.png" alt="Imagen - Escalada - Link escalando">
@@ -36,7 +45,9 @@
                 </p>
             </div>
 
-            <div class="Bienvenida" id ="Tip" style="height: 520px">
+            <!--- Carta 2 -->
+
+            <div class="Bienvenida" id ="Tip">
                 <img class="BienvenidaImage" src="/laguiahyliana/static/images/BienvenidaImage.png" alt="Imagen - Bienvenida - Link montando a caballo">
                 <p class="TipGame"> <b>Información</b></p>
                 <p class="TipTitle"> <b>¡Bienvenido a La Guía Hyliana!</b></p>
@@ -44,6 +55,8 @@
                      Aquí encontrarás todo lo que necesitas saber sobre los juegos de Zelda: Breath of the Wild y Tears of the Kingdom. Desde guías de cómo cocinar comida, hasta consejos para dominar el combate. Explora nuestras secciones para descubrir tips, ubicaciones de objetos y mucho más. ¡Prepárate para tu aventura épica en Hyrule!
                 </p>
             </div>
+
+            <!--- Carta 3 -->
 
             <div class="Espada" id="Tip">
                 <img class="EspadaImage" src="/laguiahyliana/static/images/EspadaImage.png" alt="Imagen - Espada - Espada Maestra en el pedestal">
@@ -56,37 +69,43 @@ La legendaria Espada Maestra se consigue yendo al Bosque Kolog. Solo puedes entr
 
         </span>
         
-        <div clas="BotwDiv">
+        <!--- Secciones de Juego -->  
 
-            <img class="BotwFoto" src="/laguiahyliana/static/images/Link Image BOTW.png" alt="Link - Breath of The Wild - Foto">
-                <img class="Breath" src="/laguiahyliana/static/images/Breath of The Wild.png" alt="Breath of The Wild - Texto">
-                <button
-                id="button" class="ButtonBreath">
-                <a id="EnlaceButton" href="botw.html"> Ir al Tutorial
-                </button>
-        
-        </div>
-        <div clas="TotkDiv">
-            <img class="TotkFoto" src="/laguiahyliana/static/images/Link Image TOTK.png" alt="Link - Tears of The Kingdom - Foto">
-                <img class="Tears" src="/laguiahyliana/static/images/Tears of The Kingdom.png" alt="Tears of The Kingdom - Texto">
-                <button
-                id="button" class="ButtonTears">
-                <a id="EnlaceButton" href="totk.html"> Ir al Tutorial
-                </button>
-        </div>
-        <div class="TipsDiv"></div>
 
-                <img class="CenterFoto" src="/laguiahyliana/static/images/LinkTips.png" alt="Link - Foto">
-                <img class="CenterText" src="/laguiahyliana/static/images/Los Mejores Tips.png" alt="Los Mejores Tips - Texto">
-                <button
-                id="button" class="CenterButton">
-                <a id="EnlaceButton" href="tips.html"> Ir al Tutorial
-                </button>
+            <!--- Sección para Breath of The Wild -->
+
+        <div class="GameSection BotwDiv">
+            <div class="BotwContent">
+                <h2 class="GameTitle">Breath of the Wild</h2>
+                <p class="GameIntro">Explora libremente un Hyrule vasto, resuelve templos y enfréntate al destino con ingenio y valentía.</p>
+                <a href="botw.html" class="GameButton">Ir al Tutorial</a>
             </div>
+            <img class="GameImage" src="/laguiahyliana/static/images/Link Image BOTW.png" alt="Link - BOTW">
+        </div>
+
+
+            <!--- Sección para Tears of The Kingdom -->
+
+        <div class="GameSection TotkDiv">
+            <img class="GameImage" src="/laguiahyliana/static/images/Link Image TOTK.png" alt="Link - TOTK">
+            <div class="TotkContent">
+                <h2 class="GameTitle">Tears of the Kingdom</h2>
+                <p class="GameIntro">Viaja entre el cielo y la tierra, descubre nuevos poderes y enfréntate a una amenaza ancestral.</p>
+                <a href="totk.html" class="GameButton">Ir al Tutorial</a>
+            </div>
+        </div>
+
+
+            <!--- Sección para Los Mejores Tips -->
+
+        <div class="GameSection TipsDiv">
+            <img class="GameImage" src="/laguiahyliana/static/images/LinkTips.png" alt="Link - Tips">
+            <h2 class="GameTitle">Los Mejores Tips</h2>
+            <p class="GameIntro">Descubre trucos, consejos y secretos que llevarán tu aventura al siguiente nivel.
+</p>
+            <a href="tips.html" class="GameButton">Ir al Tutorial</a>
+        </div>  
+                    
     </main>
-    <footer>
-        <img class="linkbotw2" src="/laguiahyliana/static/images/Botw.png" alt="Imagen - Link - Breath of The Wild">
-            <img class="logo2" src="/laguiahyliana/static/images/Logo.png" alt="Texto - Logo - Guía Hyliana">
-            <img class="tilde2" src="/laguiahyliana/static/images/Tilde.png" alt="Tilde - Guía Hyliana">
-        <img class="linktotk2" src="/laguiahyliana/static/images/Totk.png" alt="Imagen - Link - Tears of The Kingdom">
-    </footer>
+</body>
+</html>
