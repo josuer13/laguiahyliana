@@ -1,0 +1,504 @@
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+        /* --- Estilo del Header --- */
+
+        header {
+            background-color: #000;
+            width: 100%;
+            height: 151px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-attachment: fixed;
+        }
+
+        .linkbotw {
+            position: absolute;
+            left: 34px;
+            top: 0px;
+        }
+
+        .linktotk {
+            position: absolute;
+            right: 34px;
+            top: 0px;
+        }
+
+        .logohyrule{
+            position: absolute;
+            left: 50%;
+            transform: translate(-60%);
+            top: 12px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .logo{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 47px;
+        }
+
+            /* --- Logo Animation --- */
+
+            .logo {
+                left: 50%;
+                transform: translate(-50%);
+                animation: logoAppearingRotate 1s 
+            }
+
+            @keyframes logoAppearingRotate {
+                0% {
+                    transform: translate(-50%) scale(0.7) rotate(-10deg);
+                    opacity: 0.2;
+                }
+                60% {
+                    transform: translate(-50%) scale(1.15) rotate(10deg);
+                    opacity: 1;
+                }
+                80% {
+                    transform: translate(-50%) scale(0.95) rotate(-5deg);
+                }
+                100% {
+                    transform: translate(-50%) scale(1) rotate(0deg);
+                }
+            }
+
+
+        .tilde {
+            position: absolute;
+            left: 45%;
+            transform: translate(-45%);
+            top: 12px;
+        }
+
+            /* --- Tilde Animation --- */
+
+            .tilde {
+                animation: tildeAppearing 1s 
+            }
+
+            @keyframes tildeAppearing{
+                0% {
+                    transform: scale(0.7);
+                    opacity: 0.2;
+                }
+                60% {
+                    transform: scale(1.15);
+                    opacity: 0.5;
+                }
+                80% {
+                    transform: scale(0.95);
+                    opacity: 0.7;
+                }
+                100% {
+                    transform: scale(1) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+
+/* --- MiniHeader --- */
+
+.miniheader {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+        /* --- Tips Diseño --- */
+
+        .TipTitle {
+            color: #42736E;
+            font-weight: 800px;
+            font-size: 24px;
+            font-family: 'Kanit', sans-serif;
+            font-style: italic;
+            position: relative;
+            top: -25px;
+            left: 20px;
+        }
+        .TipText {
+            color: #292929;
+            font-size: 19px;
+            font-family: 'Kanit', sans-serif;
+            position: relative;
+            top: -40px;
+            left: 20px;
+            margin-right: 40px;
+        }
+
+        .TipGame{
+            color: #B99658;
+            font-size: 12px;
+            line-height: 1.7142857143;
+            font-weight: 300;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        #Tip{
+            background-color: #F4EFE5;
+            width: 390px;
+            height: 500px;
+            border-radius: 20px;
+            
+        }
+
+                /* --- Tips Animación --- */
+
+                #Tip {
+                    background-color: #F4EFE5;
+                    width: 391px;
+                    height: 494px;
+                    border-radius: 20px;
+                    transition: transform 0.3s, box-shadow 0.3s;
+                }
+
+                #Tip:hover {
+                    animation: tipHover 0.3s 0.2s forwards ease-in;
+                }
+
+                @keyframes tipHover {
+                    0% {
+                        transform: translateY(0) scale(1);
+                    }
+                    100% {
+                        transform: scale(1.04) rotate(-2deg);
+                        box-shadow: 0 8px 32px rgba(225, 211, 149, 0.4);
+                    }
+                }
+
+                /* --- 3 Tips Style --- */       
+
+                .Escalada, .Espada{
+                    margin-top: 100px;
+                }
+
+                .Bienvenida{
+                    background-color: #F4EFE5;
+                    width: 391px;
+                    height: 510px;
+                    top: 320px;
+                    left: 760px;
+                    border-radius: 20px;
+                    margin-top: 70px;
+                }
+
+                .BienvenidaImage, .EscaladaImage, .EspadaImage{
+                    position: relative;
+                    left: 20px;
+                    top: 20px;
+                }
+
+/* --- Tutoriales --- */
+            
+
+        /* --- Estilos Predeterminados --- */
+
+        .GameSection {
+        display: grid;
+        align-items: center;
+        gap: 40px;
+        margin: 100px auto;
+        width: 50%;
+        }
+
+        .GameImage {
+        width: 300px;
+        height: auto;
+        border-radius: 50%;
+        }
+
+        .GameTitle {
+        font-size: 36px;
+        color: #4c6966;
+        font-weight: bold;
+        margin: 0;
+        }
+
+        .GameIntro {
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+        line-height: 1.6;
+        max-width: 500px;
+        }
+
+        .GameButton {
+            background-color: #1e271cfd;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-size: 18px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .GameButton:hover {
+            background-color: #616968;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+
+        /* --- Breath of the Wild --- */
+
+        .BotwDiv {
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        background: linear-gradient(90deg, #edffee 5%, #f7fff8 80% ,#fff 90%);
+        border-radius: 40px;
+        }
+
+        .BotwContent {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        }
+
+        /* --- Tears of the Kingdom --- */
+
+        .TotkDiv {
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        background: linear-gradient(90deg, #fff 10%, #f7fff8 20%, #edffee 90%);
+        border-radius: 40px;
+        }
+
+        .TotkContent {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        /* --- Página Tips --- */
+
+        .TipsDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+        margin: 100px auto;
+        }
+
+.Tears2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 1754px; 
+}
+
+                                                                          /* 
+                                                               CSS Páginas de Tutoriales
+                                                                          */
+
+/* --- Hero --- */
+
+.HeroWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 200px; 
+}
+
+.HeroWrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.HeroWrapper p {
+    color: #42736E;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.First{
+    font-size: 56px;
+}
+
+.Second{
+    font-size: 48px;
+}
+
+.titlemenu{
+    position: absolute;
+    top: 964px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #F4EFE5;
+    border: 3.5px solid #B99658;
+    padding: 20px;
+    background-color: rgba(14, 30, 12, 0.9);
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu-wrapper {
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.fila {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 240px;
+    width: 100%; 
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    flex: 1; 
+    max-width: 150px; 
+    background-color: rgba(16, 32, 14, 0.8);
+    padding: 8px 15px;
+    text-align: center;
+    color: #F4EFE5;
+    font-weight: 550;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #B99658;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #F4EFE5;
+}
+
+.menu-item:hover {
+    background-color: rgba(16, 32, 14, 0.9);
+    transform: scale(1.1);
+    border-color: #00ffff;
+    color: #f0e3cb;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 3px solid #B99658;
+}
+
+                                                                            /* 
+                                                                    Historia Page CSS
+                                                                            */
+.historia-container {
+    background-color: #f5f0e8;
+    padding: 15px 30px;
+    border-radius: 7.5px;
+    max-width: 750px;
+    margin: 15px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 130px;
+}
+
+.historia-container p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 1.125em;
+    text-align: justify;
+    color: #222;
+}
+
+.titlehistoria {
+    font-size: 19.5px !important;
+    font-weight: 700;
+    margin: 1.125em 0 0.6em 0;
+    color: #333;
+}
+
+.historia-container img {
+    display: block;
+    max-width: 750px;
+    margin: 15px auto;
+    border-radius: 6px;
+}
+
+/* --- Collage de la Primera Etapa --- */
+
+.collage {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.img-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.img-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.img-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+    /* --- Collage de la Segunda Etapa --- */
+
+.collage-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  max-width: 750px;
+  margin: 20px auto;
+}
+
+.collage-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.collage-left img, .collage-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.collage-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
