@@ -239,7 +239,7 @@ a{
             border: none;
             border-radius: 6px;
             padding: 10px 16px;
-            font-size: 14px;
+            font-size: 18px;
             font-weight: 500;
             display: inline-flex;
             align-items: center;
@@ -440,5 +440,6 @@ a{
     width: 55%;
     height: auto;
 }
+
 
 
