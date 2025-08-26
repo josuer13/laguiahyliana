@@ -289,16 +289,7 @@ gap: 5px;
 margin: 100px auto;
 }
 
-.Tears2{
-position: absolute;
-left: 50%;
-transform: translate(-50%);
-top: 1754px; 
-}
-
-/* 
-CSS Páginas de Tutoriales
-*/
+/* --- CSS Páginas de Tutoriales --- */
 
 /* --- Hero --- */
 
@@ -332,70 +323,119 @@ font-size: 56px;
 font-size: 48px;
 }
 
-.titlemenu{
-position: absolute;
-top: 964px;
-left: 50%;
-transform: translateX(-50%);
-color: #F4EFE5;
-border: 3.5px solid #B99658;
-padding: 20px;
-background-color: rgba(14, 30, 12, 0.9);
-font-size: 48px;
-font-weight: bold;
-text-align: center;
-border-radius: 10px;
+.titlemenu {
+  display: inline-block;
+  margin: 80px auto 40px auto;
+  padding: 12px 30px;
+  background-color: #000000; 
+  color: #ffffff;
+  font-weight: 550;
+  font-size: 36px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: inherit;
+  user-select: none;
+}
+
+.titlemenu:hover {  
+  font-weight: 700;
+  font-size: 37px;
+  box-shadow: 0 6px 10px rgba(150, 150, 150, 0.4);
 }
 
 .menu-wrapper {
-margin-top: 450px;
-display: flex;
-flex-direction: column;
-align-items: center; 
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 120px;
 }
 
-.fila {
-display: flex;
-justify-content: center; 
-flex-wrap: wrap;
-gap: 240px;
-width: 100%; 
-margin-bottom: 30px;
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
 }
 
-.menu-item {
-flex: 1; 
-max-width: 150px; 
-background-color: rgba(16, 32, 14, 0.8);
-padding: 8px 15px;
-text-align: center;
-color: #F4EFE5;
-font-weight: 550;
-font-size: 18px;
-border-radius: 5px;
-border: 2px solid #B99658;
+.menu-card {
+  background-color: #FDFEFE;
+  border-radius: 20px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  height: 175px;
 }
 
-.menu-item a {
-text-decoration: none;
-color: #F4EFE5;
+.menu-card:hover {
+  transform: translateY(-5px);
 }
 
-.menu-item:hover {
-background-color: rgba(16, 32, 14, 0.9);
-transform: scale(1.1);
-border-color: #00ffff;
-color: #f0e3cb;
-font-weight: 700;
-font-size: 20px;
-transition: all 0.3s ease;
-cursor: pointer;
-border: 3px solid #B99658;
+.menu-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: 'Kanit', sans-serif;
 }
 
-/* 
-Historia Page CSS
-*/
+.menu-desc {
+  font-size: 17px;
+  color: #292929;
+  font-family: 'Kanit', sans-serif;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.MenuButton {
+  background-color: #1e271cfd;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.MenuButton:hover {
+  background-color: #464646;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* --- Los Mejores Tips Página --- */
+.tips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-rows: auto; 
+  align-items: start;
+  justify-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+/* --- Historia Page CSS --- */
 .historia-container {
 background-color: #f5f0e8;
 padding: 15px 30px;
@@ -488,4 +528,83 @@ border-radius: 6px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 10px;
+}
+
+/* --- Recomendaciones --- */
+
+.RecomContainer {
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 1%, #f1f1f1 15%, #f1f1f1 100%);
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 115px;
+    padding-bottom: 125px;
+}
+
+.RecomBig {
+    font-size: 36px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 36px;
+}
+
+.RecomSmall {
+    font-size: 20px;
+    color: #555555;
+    margin-top: -22.5px;
+}
+
+.RecomCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.RecomCard {
+    background-color: #FDFEFE;
+    width: 400px;
+    height: 145px;
+    border-radius: 20px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: rgba(16, 32, 14, 0.08) 0px 4px 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.RecomTitle {
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+}
+
+.RecomText {
+    color: #292929;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    margin: 6px 0 10px 0;
+    line-height: 1.4;
+    flex-grow: 0;
+}
+
+.RecomButton {
+    background-color: #1e271cfd;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 16px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 12px -3px rgba(0, 0, 0, 0.08);
+}
+
+.RecomButton:hover {
+    background-color: #616968;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
